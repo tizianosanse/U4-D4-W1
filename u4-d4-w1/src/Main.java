@@ -10,6 +10,10 @@ public class Main {
         DipendentiPartTime TOM = new DipendentiPartTime(672436,1000,Dipartimento.PRODUZIONE,85);
         DipendenteFullTime JHON = new DipendenteFullTime(232537,1500,Dipartimento.VENDITE);
         JENNY.calculateSalary();
+        TOM.calculateSalary();
+        BRUNO.calculateSalary();
+        JHON.calculateSalary();
+        JERRY.calculateSalary();
         int stipendi = 0;
         Dipendenti[] arrDipen = {JHON,JENNY,JERRY,BRUNO,TOM};
         for (int i = 0; i < arrDipen.length ; i++) {
