@@ -1,6 +1,6 @@
 package esercizio;
 
-public  class Dipendenti {
+public abstract class Dipendenti {
 private int matricola;
 private int stipendio;
 protected  Dipartimento dipartimento;
@@ -12,13 +12,17 @@ protected  Dipartimento dipartimento;
 
 
     }
-
+public abstract void calculateSalary();
     public  int getMatricola() {
         return matricola;
     }
 
     public int getStipendio() {
         return stipendio;
+    }
+
+    public void setStipendio(int stipendio) {
+        this.stipendio = stipendio;
     }
 
     public Dipartimento getDipartimento() {
